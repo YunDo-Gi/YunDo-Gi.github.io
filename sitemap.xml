@@ -1,32 +1,35 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-        {% endif %}
-
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-
-    </url>
-    {% endfor %}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://yundo-gi.github.io/posts/Node.js-%EA%B4%80%EB%A0%A8-%EB%82%B4%EC%9A%A9-%EC%A0%95%EB%A6%AC/</loc>
+<lastmod>2021-12-12T23:40:00+09:00</lastmod>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/categories/</loc>
+<lastmod>2021-12-13T00:21:50+09:00</lastmod>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/tags/</loc>
+<lastmod>2021-12-13T00:21:50+09:00</lastmod>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/archives/</loc>
+<lastmod>2021-12-13T00:21:50+09:00</lastmod>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/about/</loc>
+<lastmod>2021-12-13T00:21:50+09:00</lastmod>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/</loc>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/tags/node-js/</loc>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/categories/programming/</loc>
+</url>
+<url>
+<loc>https://yundo-gi.github.io/categories/back-end/</loc>
+</url>
 </urlset>
